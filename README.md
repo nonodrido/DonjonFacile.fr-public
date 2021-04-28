@@ -1,4 +1,6 @@
 # Repository dédié au site web "DonjonFacile.fr"
+__Ce site a fermé le 30/04/2021.__
+
 > Site communautaire autour du jeu de rôle Naheulbeuk de 2012 à 2021.
 Il permettait de créer des fiches de personnages de ce JDR sous format jpg.
 Un base de donnée de près de 13000 objets, 13000 personnages, 100 compagnies et 32000 utilisateurs (dont bon nombre de bots...)
@@ -13,7 +15,7 @@ Le coeur du site étant la génération de fiche de personnage, je pointe en par
 - /pages/fiche_advanced.php
 
 ## Données/BDD
-La base de donnée du site est disponible dans le dossier __DATABASES__ sous les formats suivants :
+La base de donnée du site est disponible dans le dossier `__DATABASES__` sous les formats suivants :
 - ods
 - xlsx (exporté depuis ods, sans garantie de qualité)
 - structure SQL du site
