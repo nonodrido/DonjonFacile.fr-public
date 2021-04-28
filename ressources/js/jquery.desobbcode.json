@@ -1,0 +1,96 @@
+﻿{
+	"inputButton": [
+		{
+			"id": "desoBBCode_bold",
+			"value": "Gras",
+			"tag": "b"
+		},
+		{
+			"id": "desoBBCode_italic",
+			"value": "Italique",
+			"tag": "i"
+		},
+		{
+			"id": "desoBBCode_underline",
+			"value": "Souligné",
+			"tag": "u"
+		},
+		{
+			"id": "desoBBCode_strike",
+			"value": "Barré",
+			"tag": "strike"
+		},
+		{
+			"id": "desoBBCode_image",
+			"value": "Image",
+			"tag": "img"
+		},
+		{
+			"id": "desoBBCode_link",
+			"value": "Lien",
+			"tag": "url"
+		},
+		{
+			"id": "desoBBCode_quote",
+			"value": "Citation",
+			"tag": "quote"
+		},
+		{
+			"id": "desoBBCode_secret",
+			"value": "Secret",
+			"tag": "secret"
+		}
+	],
+	"selectTextSize": [
+		{
+			"text": "Taille",
+			"value": ""
+		},
+		{
+			"text": "Très très petit",
+			"value": "1"
+		},
+		{
+			"text": "Très petit",
+			"value": "2"
+		},
+		{
+			"text": "Petit",
+			"value": "3"
+		},
+		{
+			"text": "Gros",
+			"value": "4"
+		},
+		{
+			"text": "Très gros",
+			"value": "5"
+		},
+		{
+			"text": "Très très gros",
+			"value": "6"
+		}
+	],
+	"selectTextColor": [
+		{
+			"text": "Couleur",
+			"value": ""
+		},
+		{
+			"text": "Rouge",
+			"value": "red"
+		},
+		{
+			"text": "Bleu",
+			"value": "blue"
+		},
+		{
+			"text": "Vert",
+			"value": "green"
+		},
+		{
+			"text": "Orange",
+			"value": "orange"
+		}
+	]
+}

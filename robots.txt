@@ -1,0 +1,36 @@
+User-agent:  *
+Disallow:
+Disallow: /accueil.html
+Disallow: /item_sorts.html
+Disallow: /item_prodiges.html
+Disallow: /item_comp.html
+Disallow: /item_main.html
+Disallow: /item_protec.html
+Disallow: /item_arme.html
+Disallow: /item_create_main.html
+Disallow: /item_prodiges.html
+Disallow: /calendar.html
+Disallow: /item_sorts.html
+Disallow: /chat.php
+Disallow: /appli
+Disallow: /accueil
+Disallow: /item_sorts
+Disallow: /item_prodiges
+Disallow: /item_comp
+Disallow: /item_main
+Disallow: /item_protec
+Disallow: /item_arme
+Disallow: /item_create_main
+Disallow: /item_prodiges
+Disallow: /calendar
+Disallow: /item_sorts
+Disallow: /appli
+Disallow: /ajax/
+Disallow: /cron/
+Disallow: /page/
+Disallow: /cache/
+Disallow: /includes/
+Disallow: /antibrute/
+Disallow: /bootstrap/
+
+Sitemap: http://donjonfacile.fr/sitemap.xml

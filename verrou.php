@@ -1,0 +1,1 @@
+<?php define('VERROU_SITE',false);

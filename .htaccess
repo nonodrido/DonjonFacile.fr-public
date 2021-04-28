@@ -1,0 +1,66 @@
+AddDefaultCharset utf-8
+ErrorDocument 404 /404
+ErrorDocument 403 /404
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+
+# Mise en place de la ré-écriture
+RewriteEngine On
+
+# Adresse de base de réécriture
+RewriteBase /
+
+# règle de réécriture
+RewriteRule ^([0-9a-zA-Z_-]+)/([a-zA-Z_-]+)/([0-9]+)(/([0-9a-zA-Z_-]*))?$ /index.php?page=$1&mode=$2&id=$3&flush=$5 [L,QSA]
+RewriteRule ^([0-9a-zA-Z_-]+)/([a-zA-Z_-]+)(/([0-9a-zA-Z_-]*))?$ /index.php?page=$1&mode=$2&flush=$4 [L,QSA]
+RewriteRule ^([0-9a-zA-Z_-]+)/([0-9]+)(/([0-9a-zA-Z_-]*))?$ /index.php?page=$1&id=$2&flush=$4 [L,QSA]
+RewriteRule ^([0-9a-zA-Z_-]+)(/([0-9a-zA-Z_-]*))?$ /index.php?page=$1&flush=$3 [L,QSA]
+
+#fiche des personnages
+RewriteRule ^fiche-([0-9]+)(-([0-9a-zA-Z_-]*))?\.jpg$ /index.php?page=fiche&id=$1 [L,QSA]
+RewriteRule ^fiche-advanced-([0-9]+)(-([0-9a-zA-Z_-]*))?\.jpg$ /index.php?page=fiche_advanced&id=$1 [L,QSA]
+
+#ressources js/css
+RewriteRule ^ressources/js/[0-9]+-(.+)(\.js)$ /ressources/js/$1.js [L,QSA]
+RewriteRule ^bootstrap/js/[0-9]+-(.+)(\.js)$ /bootstrap/js/$1.js [L,QSA]
+RewriteRule ^ressources/css/[0-9]+-(.+)(\.css)$ /ressources/css/$1.css [L,QSA]
+RewriteRule ^bootstrap/css/[0-9]+-(.+)(\.css)$ /bootstrap/css/$1.css [L,QSA]
+
+## contrôle du cache navigateur - Expire headers  
+<IfModule mod_expires.c>  
+ExpiresActive On  
+ExpiresDefault "access plus 7200 seconds"  
+ExpiresByType image/jpg "access plus 604800 seconds"  
+ExpiresByType image/jpeg "access plus 604800 seconds"  
+ExpiresByType image/png "access plus 604800 seconds"  
+ExpiresByType image/gif "access plus 604800 seconds"  
+AddType image/x-icon .ico  
+ExpiresByType image/ico "access plus 604800 seconds"  
+ExpiresByType image/icon "access plus 604800 seconds"  
+ExpiresByType image/x-icon "access plus 604800 seconds"  
+ExpiresByType text/css "access plus 604800 seconds"  
+ExpiresByType text/javascript "access plus 604800 seconds"  
+ExpiresByType text/html "access plus 7200 seconds"  
+ExpiresByType application/xhtml+xml "access plus 7200 seconds"  
+ExpiresByType application/javascript A604800  
+ExpiresByType application/x-javascript "access plus 604800 seconds"  
+ExpiresByType application/x-shockwave-flash "access plus 604800 seconds"  
+ExpiresByType application/font-ttf "access plus 604800 seconds"
+ExpiresByType application/font-woff "access plus 604800 seconds"
+ExpiresByType application/font-eot "access plus 604800 seconds"
+</IfModule>  
+
+<IfModule mod_headers.c>  
+<FilesMatch "\\.(ico|jpe?g|png|gif|swf)$">  
+Header set Cache-Control "max-age=604800, public"  
+</FilesMatch>  
+<FilesMatch "\\.(css)$">  
+Header set Cache-Control "max-age=604800, public"  
+</FilesMatch>  
+<FilesMatch "\\.(js)$">  
+Header set Cache-Control "max-age=604800, private"  
+</FilesMatch>  
+<FilesMatch "\\.(x?html?|php)$">  
+Header set Cache-Control "max-age=600, private, must-revalidate"  
+</FilesMatch>  
+</IfModule>  

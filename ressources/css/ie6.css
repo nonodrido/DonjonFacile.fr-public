@@ -1,0 +1,19 @@
+#CHG{margin-right : -8px; margin-bottom : -8px;}
+#CHD{margin-left : -8px; margin-bottom : -10px;}
+#CBG{margin-right : -8px; margin-top : -10px;}
+#CBD{margin-left : -8px; margin-top : -10px;}
+#BH{margin-bottom : -10px; margin-right : 8px; margin-left : 8px;}
+#BB{margin-top : -10px; margin-right : 8px; margin-left : 8px;}
+
+#conteneur
+{
+	width : 98%;
+	width : expression((document.body.clientWidth<=819) ? '800px' : '98%');
+}
+
+#conteneur_1{padding-bottom : 0px;}
+
+html{font-family : sans-serif;}
+#banniere, #MH, #MV, #texte, #pied_de_page{font-family : Trebuchet MS , sans-serif;}
+
+#overflow{width : 99%;}

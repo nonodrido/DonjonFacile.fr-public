@@ -1,0 +1,81 @@
+
+#jMenu {
+	display:table;
+	margin:0;
+	padding:0;
+	text-align:center;
+	height:33px;
+	z-index:99;
+}
+
+/********************/
+/** premier niveau **/
+/********************/
+#jMenu li {
+	display:inline-block;
+	background:#322f32;
+	margin:0;
+	height:33px;
+}
+	#jMenu li a {
+		padding:10px;
+		display:block;
+		background-color: transparent;
+		color:#fff;
+		text-transform:uppercase;
+		cursor:pointer;
+		font-size:12px;
+	}
+	#jMenu li a:hover {
+		text-decoration:none;
+	}
+	
+/*******************/
+/** second niveau **/
+/*******************/
+#jMenu li ul {
+	display:none;
+	position:absolute;
+	padding:0;
+	margin:0;
+	height:auto;
+}
+	#jMenu li ul li {
+		background-color:#322f32;
+		display:inline-block;
+		border-bottom:1px solid #484548;
+		padding:0;
+		display:block;
+		z-index:99;
+		height:auto;
+	}
+	#jMenu li ul li.arrow {
+		background:#322f32 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAG9JREFUeNpsjMEKgDAMQzPxQ2Q/50EQ9ODV7epBURT0a2szuoFgoGuXvBa+8XLuN0TkU/Q0Y6VP+AMzwLwGEMZhwrotorPT4swm6kfmjlvX8dAMGs4GFoBBxafrW9jFmAFdSACVLlF2DbZdAOoVYABUHkeNFVih8wAAAABJRU5ErkJggg==
+								) no-repeat center center;
+		height:6px;
+		padding:0;
+		border-bottom:none;
+		padding-bottom:10px
+		z-index:99;
+	}
+		#jMenu li ul li a {
+			font-size:11px;
+			text-transform:none;
+			padding:7px;
+			display:block;
+			border-top:1px solid transparent;
+			border-bottom:1px solid transparent;
+			z-index:99;
+		}
+		#jMenu li ul li a.isParent {
+			background:#3A3A3A url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIVJREFUeNpi/P//P4OyovL/osKyRgYGhoa+/i44mwEJZOelM6ADJijNCNRUD9IA1AhnMxAAYM1ADSgGILOBNG7dIGfDsJKCEgj/nzJxRgMQo7CR1cEwE7JB+FyA09nojkEKMKyBh6F56qSZDMghjSvUMfyM7j9CfoVhWEBhaMSnCYYBAgwAfyqjW6Zq4MkAAAAASUVORK5CYII=
+) no-repeat right center;
+			z-index:99;
+		}
+			#jMenu li ul li a:hover {
+				background-color:#514c52;
+				border-top:1px solid #322f32;
+				border-bottom:1px solid #322f32;
+				z-index:99;
+				text-decoration:none;
+			}

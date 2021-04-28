@@ -1,0 +1,21 @@
+div.desoBBCode_element{margin-bottom:5px;text-align:center}
+div.desoBBCode_element label{width:100px;vertical-align:middle;display:block;color:#555;float:left;padding-left:5px;padding-right:6px;padding-top:5px}
+input.desoBBCode_green_btn{background:url(../images/green_button_grad_long.png) top left #64a551;border:1px solid #3b6e22;height:28px;color:#FFF;font-size:13px;width:70px;font-weight:700;cursor:pointer;border-radius:3px;margin:2px;padding:0 6px}
+input.desoBBCode_green_btn:hover{opacity:0.8}
+.size-1{font-size:xx-small}
+.size-2{font-size:x-small}
+.size-3{font-size:small}
+.size-4{font-size:large}
+.size-5{font-size:x-large}
+.size-6{font-size:xx-large}
+.color-red{color:red}
+.color-blue{color:blue}
+.color-green{color:green}
+.color-orange{color:orange}
+.desoBBCode_strike{text-decoration:line-through}
+.desoBBCode_quote{border:1px solid #999;background-color:#ccc;border-radius:3px;margin:2px;padding:8px}
+.desoBBCode_quote:hover{background-color:#dfe3ee}
+.desoBBCode_secret{font-weight:700}
+.desoBBCode_secret + div{display:none}
+.desoBBCode_quote_author{padding-left:3px}
+#desoBBCode_prev_area{font-family:Arial,verdana;font-size:12px;display:none;margin:4px}
