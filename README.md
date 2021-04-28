@@ -20,3 +20,5 @@ La base de donnée du site est disponible dans le dossier __DATABASES__ sous les
 Il n'est pas censé rester de données personnelle autre que les pseudos des utilisateurs. Si j'ai fait un oubli, je vous invite à me le signaler, ce n'est pas le but.
 
 La structure de donnée est assez simple, avec une table par type de data (objet, personnage, user, compagine) et des tables liant les ID entre eux.
+
+Contact : contact [arobase] donjonfacile.fr
