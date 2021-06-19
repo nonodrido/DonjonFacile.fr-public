@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 define('TITRE_SITE', ' &bull; DonjonFacile.fr');
 define('RESSOURCES','/ressources/');
 define('DIR_IMG', RESSOURCES.'img/');
